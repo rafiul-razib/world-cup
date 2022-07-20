@@ -42,7 +42,6 @@ body{
 
 .banner img{
     width: 45%;
-    padding: 0;
     position: absolute;
     bottom: 0;
     padding-top: 30px;
@@ -157,7 +156,7 @@ footer{
 footer h2{
     font-size: 40px;
     font-weight: 600;
-    padding-top: 130px;
+    padding-top: 80px;
     padding-bottom: 25px;
 }
 
@@ -180,4 +179,112 @@ footer a{
 .social-media{
     margin-top: 20px;
     padding-bottom: 30px;
+}
+
+
+/* Upcoming Matches */
+
+.match-card{
+    text-align: center;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 12px;
+}
+
+
+.flag{
+    display: grid;
+    grid-template-columns: auto 50px auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.vs{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.match-time{
+    color: #4D4D4D
+}
+
+/* Mobile responsiveness */
+
+
+
+
+@media only screen and (max-width: 576px) {
+    .banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 5px;
+        padding: 0 30px ;
+        margin: 0;
+        text-align: center;
+        height: 472px
+
+    }
+
+    .banner h1{
+        font-size: 22px;
+        line-height: 26px;
+    }
+    
+    .banner p{
+       font-size: 10px;
+    }
+    
+    .image-container{
+        margin-top: 100px; 
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner img{
+        width: 70%;
+        padding: 0;
+    }
+
+    .text-container{
+        padding: 20px;
+    }
+
+    .main-btn{
+        margin-top: 10px;
+    }
+
+
+    .matches{
+        flex-direction: column;
+    }
+
+    .navigation{
+        background-color: #fff;
+        height: 150px;
+        width: auto;
+    }
+
+    .navigation a{
+        text-align: center;
+        padding: 5px 10px;
+        border: 1px solid grey;
+        font-weight: 700;
+    }
+    .grid-items{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        padding-left: 0;
+    
+    }
+
+    footer .contact-section a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      
+    }
+
+
 }
