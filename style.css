@@ -16,7 +16,7 @@ body{
 /* Banner */
 .banner{
     max-width: 90%;
-    margin: 0 auto;
+    margin: 10px auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
@@ -41,10 +41,10 @@ body{
 }
 
 .banner img{
-    width: 45%;
+    width: 42%;
     position: absolute;
     bottom: 0;
-    padding-top: 30px;
+    margin-top: 30px;
     padding-right: 80px;
     
 }
@@ -65,9 +65,6 @@ body{
 
 }
 
-/* .btn-arrow{
-    color: #ffff;
-} */
 
 
 /* Matches */
@@ -111,6 +108,8 @@ navigation a:active{
 
 /* Blog */
 
+/* Player Card */
+
 .player-card{
     border: 2px solid lightgray;
     border-radius: 12px;
@@ -143,15 +142,13 @@ navigation a:active{
 
 .icon-div{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     
 }
 
-.icon-div img{
-    width: 35%;
-    padding-right: 5px;
+.icon-div p{
+    margin-right: 30px;
 }
-
 
 
 .grid-items{
@@ -247,9 +244,9 @@ footer a{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border-radius: 5px;
+        border-radius: 10px;
         padding: 0 30px ;
-        margin: 0;
+        margin: 10px 0;
         text-align: center;
         height: 472px
 
@@ -271,7 +268,7 @@ footer a{
     }
 
     .banner img{
-        width: 70%;
+        width: 65%;
         padding: 0;
     }
 
@@ -322,13 +319,24 @@ footer a{
 
 @media (min-width: 689px) and (max-width: 992px) {
 
+    .banner{
+        padding: 60px;
+        border-radius: 10px;
+        
+    }
+
     .banner h1{
         font-size: 40px;
         line-height: 45px;
     }
     
     .banner p{
-       font-size: 14px;
+       font-size: 10px;
+    }
+
+    .banner img{
+        width: 48%;
+        padding: 0;
     }
     .navigation{
         flex-direction: row;
